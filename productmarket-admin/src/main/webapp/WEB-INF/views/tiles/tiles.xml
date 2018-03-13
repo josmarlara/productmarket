@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>  
+ 
+   <!-- Base Definition -->
+   <definition name="base-definitionlogin" 
+       template="/WEB-INF/views/tiles/adminLogin.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/headerLogin.jsp" />  
+        <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp" />  
+   </definition>  
+   
+   
+   
+   
+   <definition name="base-definition" 
+       template="/WEB-INF/views/tiles/admin.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/menu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp" />  
+   </definition>  
+ 
+  <definition name="login" extends="base-definitionlogin">  
+       <put-attribute name="title" value="Bienvenido" />  
+       <put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
+   </definition>  
+ 
+ 
+ 
+   <!-- Home Page -->
+   <definition name="home" extends="base-definition">  
+       <put-attribute name="title" value="Bienvenido" />  
+       <put-attribute name="body" value="/WEB-INF/views/home.jsp" />  
+   </definition>  
+
+   <!-- Product Page -->
+   <definition name="agregarUsuario" extends="base-definition">  
+       <put-attribute name="title" value="Agregar usuario" />  
+       <put-attribute name="body" value="/WEB-INF/views/agregarUsuario.jsp" />  
+   </definition>  
+      
+       <definition name="verUsuarios" extends="base-definition">  
+       <put-attribute name="title" value="Ver usuarios" />  
+       <put-attribute name="body" value="/WEB-INF/views/verUsuarios.jsp" />  
+   </definition>
+      
+      <definition name="modificarUsuario" extends="base-definition">  
+       <put-attribute name="title" value="Ver usuarios" />  
+       <put-attribute name="body" value="/WEB-INF/views/modificarUsuario.jsp" />  
+   </definition>
+      
+     <definition name="agregarProducto" extends="base-definition">  
+       <put-attribute name="title" value="Agregar producto" />  
+       <put-attribute name="body" value="/WEB-INF/views/agregarProducto.jsp" />  
+   </definition> 
+   <definition name="verProductos" extends="base-definition">  
+       <put-attribute name="title" value="Ver productos" />  
+       <put-attribute name="body" value="/WEB-INF/views/verProductos.jsp" />  
+   </definition> 
+   
+   
+   <definition name="modificarProducto" extends="base-definition">  
+       <put-attribute name="title" value="Actualizar producto" />  
+       <put-attribute name="body" value="/WEB-INF/views/modificarProducto.jsp" />  
+   </definition>
+   
+   <definition name="buscarReporteVentasOnlineDetalle" extends="base-definition">  
+       <put-attribute name="title" value="buscar reporte" />  
+       <put-attribute name="body" value="/WEB-INF/views/buscarReporteVentasOnlineDetalle.jsp" />  
+   </definition>
+ 
+ <definition name="reporteVentasOnlineDetalle" extends="base-definition">  
+       <put-attribute name="title" value="Reporte ventas detalle online" />  
+       <put-attribute name="body" value="/WEB-INF/views/reporteVentasOnlineDetalle.jsp" />  
+   </definition>
+   
+   
+   <definition name="buscarReporteVentasOnline" extends="base-definition">  
+       <put-attribute name="title" value="buscar reporte" />  
+       <put-attribute name="body" value="/WEB-INF/views/buscarReporteVentasOnline.jsp" />  
+   </definition>
+ 
+ <definition name="reporteVentasOnline" extends="base-definition">  
+       <put-attribute name="title" value="Reporte ventas detalle online" />  
+       <put-attribute name="body" value="/WEB-INF/views/reporteVentasOnline.jsp" />  
+   </definition>
+ 
+ <definition name="buscarReporteVentasDetalle" extends="base-definition">  
+       <put-attribute name="title" value="buscar reporte" />  
+       <put-attribute name="body" value="/WEB-INF/views/buscarReporteVentasDetalle.jsp" />  
+   </definition>
+ 
+ <definition name="reporteVentasDetalle" extends="base-definition">  
+       <put-attribute name="title" value="Reporte ventas detalle online" />  
+       <put-attribute name="body" value="/WEB-INF/views/reporteVentasDetalle.jsp" />  
+   </definition>
+   
+   <definition name="buscarReporteVentas" extends="base-definition">  
+       <put-attribute name="title" value="buscar reporte" />  
+       <put-attribute name="body" value="/WEB-INF/views/buscarReporteVentas.jsp" />  
+   </definition>
+ 
+ <definition name="reporteVentas" extends="base-definition">  
+       <put-attribute name="title" value="Reporte ventas detalle online" />  
+       <put-attribute name="body" value="/WEB-INF/views/reporteVentas.jsp" />  
+   </definition>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</tiles-definitions>
